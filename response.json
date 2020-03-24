@@ -1,0 +1,101 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Science & Nature",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which is the chemical name of H2O?",
+      "correct_answer": "Dihydrogen Monoxide",
+      "incorrect_answers": [
+        "Ammonium chloride",
+        "Anhydrous Sodium Carbonate",
+        "Manganese dioxide"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "boolean",
+      "difficulty": "hard",
+      "question": "Unturned originally started as a Roblox game.",
+      "correct_answer": "True",
+      "incorrect_answers": ["False"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In which order do you need to hit some Deku Scrubs to open the first boss door in &quot;Ocarina of Time&quot;?",
+      "correct_answer": "2, 3, 1",
+      "incorrect_answers": ["1, 2, 3", "1, 3, 2", "2, 1, 3"]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the name of the assassin in the first &quot;Hellboy&quot; movie?",
+      "correct_answer": "Karl Ruprecht Kroenen",
+      "incorrect_answers": [
+        "Klaus Werner von Krupt",
+        "Grigori Efimovich Rasputin",
+        "Ilsa Haupstein"
+      ]
+    },
+    {
+      "category": "Geography",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which US state has the highest population?",
+      "correct_answer": "California",
+      "incorrect_answers": ["New York", "Texas", "Florida"]
+    },
+    {
+      "category": "History",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who invented the &quot;Flying Shuttle&quot; in 1738; one of the key developments in the industrialization of weaving?",
+      "correct_answer": "John Kay",
+      "incorrect_answers": [
+        "James Hargreaves",
+        "Richard Arkwright",
+        "John Deere"
+      ]
+    },
+    {
+      "category": "Entertainment: Musicals & Theatres",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "How many plays is Shakespeare generally considered to have written?",
+      "correct_answer": "37",
+      "incorrect_answers": ["18", "54", "25"]
+    },
+    {
+      "category": "Geography",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "How many independent countries are there within the continent of South America?",
+      "correct_answer": "12",
+      "incorrect_answers": ["8", "9", "10"]
+    },
+    {
+      "category": "History",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What was the code name for the German invasion of the Soviet Union in WW2?",
+      "correct_answer": "Operation Barbarossa",
+      "incorrect_answers": [
+        "Operation Kaiserschlact",
+        "Operation Unthinkable",
+        "Operation Molotov"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Rick Astley&#039;s hit song &quot;Never Gonna Give You Up&quot; was released in what year?",
+      "correct_answer": "1987",
+      "incorrect_answers": ["1985", "1986", "1988"]
+    }
+  ]
+}
