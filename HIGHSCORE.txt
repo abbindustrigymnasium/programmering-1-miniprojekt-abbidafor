@@ -1,0 +1,20 @@
+highscore_list 1
+
+highscore_list 2
+
+highscore_list 3
+
+highscore_list 4
+
+highscore_list 5
+
+highscore_list 6
+
+highscore_list 7
+
+highscore_list 8
+
+highscore_list 9
+
+highscore_list 10
+

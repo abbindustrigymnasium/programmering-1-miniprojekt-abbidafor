@@ -30,8 +30,13 @@ for result in response_dictionary['results']:
     frågor.append(fråga)  
 
 
+highscore = open("HIGHSCORE.txt", "a+")
+
+for i in range(10):
+    highscore.write("highscore_list %d\r\n" % (i+1))
+
 # skriver ut välkommen frasen
-print('Välkommen till Quizmas!!!')
+print('Välkommen till Quizmas!')
 
 # randomar frågorna 
 random.shuffle(frågor)
@@ -44,6 +49,7 @@ for fråga in frågor:
 # kollar vilket alternativ som är rätt 
 # hämtar index i listan med alternativ och kollar om det är 1 x eller 2
     index = fråga['Alternativ'].index(fråga['Svar'])
+    
     fråga['RättAlternativ']  = index + 1
 
 # skriver ut frågan och salternativ
@@ -55,13 +61,10 @@ for fråga in frågor:
 # kollar om inputen (det personen tror är rätt) stämmer med svaret. om den gör det skrivs rätt ut annars skrivs fel ut
 #.upper() gör att alla bokstäver blir stora
     val = input("Skriv ditt val: ")
-    if val.upper() == fråga['RättAlternativ']:
+    if val.upper() == str(fråga['RättAlternativ']):
         poäng = poäng + 1
         print("Rätt!")
     else:
         print("Fel!")
     
 print("Du fick " + str(poäng) + " poäng!")
-
-
-
