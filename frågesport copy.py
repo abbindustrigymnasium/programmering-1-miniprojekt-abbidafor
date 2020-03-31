@@ -12,9 +12,14 @@ Fråga4 = "Är norrland ett land?"
 # vi har 0 poäng från början
 poäng = 0
 
+# skapar en lista för highscore 
+highscore_lista = []
+
 url ='https://opentdb.com/api.php?amount=10&type=multiple'
 
 # dictionary/lista över frågorna, svarsalternativ och svar 
+
+# skapar en lista för frågorna
 frågor = []
 
 
@@ -29,11 +34,6 @@ for result in response_dictionary['results']:
     fråga['Svar'] = result['correct_answer']
     frågor.append(fråga)  
 
-
-highscore = open("HIGHSCORE.txt", "a+")
-
-for i in range(10):
-    highscore.write("highscore_list %d\r\n" % (i+1))
 
 # skriver ut välkommen frasen
 print('Välkommen till Quizmas!')
@@ -66,5 +66,39 @@ for fråga in frågor:
         print("Rätt!")
     else:
         print("Fel!")
+
+
+
+highscore = open("HIGHSCORE.txt", "r+")
+# if highscore.mode == 'r':
+#     contents =highscore.read()
+#     print(contents)
+
+# contents = highscore.read()
+# print(contents + "hej")
+
+fl = highscore.readlines()
+for x in fl:
+    highscore_lista.append(int(x))
+
+# sorterar highscore listan från störst till minst 
+highscore_lista.sort(reverse = True)
+
+if poäng > min(highscore_lista):
+    del highscore_lista[-1]
+    highscore_lista.append(poäng)
+    highscore_lista.sort(reverse = True)
+    highscore.seek(0)
+    for p in highscore_lista:
+        highscore.write(str(p) + "\n")
+    print("Du kom med på HIGHSCORE listan!")
+
+# highscore.write( "\r" + str(poäng))
+
+highscore.close()
     
 print("Du fick " + str(poäng) + " poäng!")
+
+print("HIGHSCORE lista:")
+for n in highscore_lista:
+    print(str(n) + " poäng")
