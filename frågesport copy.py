@@ -46,13 +46,13 @@ random.shuffle(frågor)
 for fråga in frågor:    
     random.shuffle(fråga['Alternativ'])
 
-# kollar vilket alternativ som är rätt 
-# hämtar index i listan med alternativ och kollar vilket som är rätt
+    # kollar vilket alternativ som är rätt 
+    # hämtar index i listan med alternativ och kollar vilket som är rätt
     index = fråga['Alternativ'].index(fråga['Svar'])
     
     fråga['RättAlternativ']  = index + 1
 
-# skriver ut frågan och alternativ
+    # skriver ut frågan och alternativ
     print(fråga['Fråga'])
     print('Alternativ: ')
     for index, alternativ in enumerate(fråga['Alternativ']):
