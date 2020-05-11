@@ -46,7 +46,7 @@ random.shuffle(frågor)
 for fråga in frågor:    
     random.shuffle(fråga['Alternativ'])
 
-    # kollar vilket alternativ som är rätt 
+     
     # hämtar index i listan med alternativ och kollar vilket som är rätt
     index = fråga['Alternativ'].index(fråga['Svar'])
     
